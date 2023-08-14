@@ -2,11 +2,23 @@ import React, { useState, useEffect } from "react";
 import first from "../img/first.jpg";
 import second from "../img/second.jpg";
 import third from "../img/third.jpg";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 import "../index.css"; // Assuming you have a styles.css file for your custom styles
 
 const MainContent = () => {
     const imgUrls = [first, second, third];
     const [currentZIndex, setCurrentZIndex] = useState(0);
+
+    const [date, setDate] = useState(new Date());
+    const [startDate, setStartDate] = useState();
+    const [endDate, setEndDate] = useState();
+
+    const onChange = (range) => {
+        const [startDate, endDate] = range;
+        setStartDate(startDate);
+        setEndDate(endDate);
+    };
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -57,10 +69,19 @@ const MainContent = () => {
                                     vacation of your life.
                                 </h2>
                                 <button class="text-lg px-6 py-4 my-12 relative flex h-[50px] w-42 items-center justify-center overflow-hidden bg-primary text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-blue-600 before:duration-500 before:ease-out hover:shadow-blue-600 hover:before:h-56 hover:before:w-56">
-                                    <span class="relative z-10">
+                                    <span class="relative">
                                         View Our Villas
                                     </span>
                                 </button>
+                                <DatePicker
+                                    selected={startDate}
+                                    onChange={onChange}
+                                    startDate={startDate}
+                                    endDate={endDate}
+                                    selectsRange
+                                    dateFormat="dd/MM/yyyy"
+                                    className="text-black"
+                                />
                             </div>
                         </div>
                     </div>
