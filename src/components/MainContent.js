@@ -13,27 +13,50 @@ const MainContent = () => {
             setCurrentZIndex((prevZIndex) => (prevZIndex + 1) % imgUrls.length);
         }, 3000);
         return () => clearInterval(interval);
-    }, []);
+    }, [imgUrls.length]);
 
     return (
-        <div className="relative w-full h-full" id="root">
+        <div
+            className="flex items-center justify-center relative w-full h-screen overflow-hidden"
+            id="root"
+        >
             <div className="flex w-full h-full" id="slider-container">
                 {imgUrls.map((url, index) => (
-                    <div
-                        key={index}
-                        className={`absolute w-full h-full animate-imageTransition ${
-                            currentZIndex === index
-                                ? "z-10 opacity-100"
-                                : "z-0 opacity-0"
-                        }`}
-                        style={{
-                            backgroundImage: `url(${url})`,
-                            backgroundSize: "cover",
-                            backgroundRepeat: "no-repeat",
-                        }}
-                    >
-                        {/* Overlay */}
-                        <div className="absolute inset-0 bg-black opacity-70"></div>
+                    <div className="">
+                        <div
+                            key={index}
+                            className={`absolute w-full h-full animate-imageTransition ${
+                                currentZIndex === index
+                                    ? "z-10 opacity-100"
+                                    : "z-0 opacity-0"
+                            }`}
+                            style={{
+                                backgroundImage: `url(${url})`,
+                                backgroundSize: "cover",
+                                backgroundRepeat: "no-repeat",
+                            }}
+                        >
+                            {/* Overlay */}
+                            <div className="absolute inset-0 bg-black opacity-70"></div>
+                            <div className="flex flex-col justify-center items-center w-full h-full relative z-20">
+                                <h1 className=" text-white text-7xl p-12">
+                                    Welcome to the{" "}
+                                    {/* resort name placeholder */} Resort
+                                </h1>
+                                <h2 className="text-white text-3xl p-12">
+                                    {/* resort description placeholder */}
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Doloremque, perferendis
+                                </h2>
+                                <div className="flex">
+                                    <button class="text-lg px-6 py-4 my-12 relative flex h-[50px] w-40 items-center justify-center overflow-hidden bg-primary text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-blue-600 before:duration-500 before:ease-out hover:shadow-blue-600 hover:before:h-56 hover:before:w-56">
+                                        <span class="relative z-10">
+                                            Book Now
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 ))}
             </div>

@@ -4,8 +4,8 @@ import FacebookLogo from "../img/Facebook-Logo.svg";
 
 const Header = () => {
     return (
-        <header className="flex justify-center align-middle bg-accent w-full text-md">
-            <a className="pr-64" href="#home">
+        <header className="flex flex-row justify-center align-middle bg-accent w-full text-">
+            <a className="pr-32" href="#home">
                 <img
                     src={Logo}
                     alt="logo"
@@ -15,7 +15,7 @@ const Header = () => {
                 />
             </a>
             <ul className="flex items-center">
-                <button className="px-12 group flex  transition duration-300">
+                <button className="px-12 group flex transition duration-300">
                     <li className="">
                         <a href="#home">
                             Home
@@ -39,7 +39,7 @@ const Header = () => {
                         </a>
                     </li>
                 </button>
-                <button className="px-12 group transition duration-300">
+                <button className="px-8 group transition duration-300">
                     <li className="">
                         <a href="#aboutus">
                             About Us
@@ -64,13 +64,9 @@ const Header = () => {
                     </li>
                 </button>
             </ul>
-            <div className="flex px-12">
-                <button className="group relative flex justify-items-center items-center bg-primary text-lg px-8 my-8">
-                    <span class="ease absolute left-0 top-0 h-0 w-0 border-t-2 border-white transition-all duration-700 group-hover:w-full"></span>
-                    <span class="ease absolute right-0 top-0 h-0 w-0 border-r-2 border-white transition-all duration-700 group-hover:h-full"></span>
-                    <span class="ease absolute bottom-0 right-0 h-0 w-0 border-b-2 border-white transition-all duration-700 group-hover:w-full"></span>
-                    <span class="ease absolute bottom-0 left-0 h-0 w-0 border-l-2 border-white transition-all duration-700 group-hover:h-full"></span>
-                    <p className="">Book Now</p>
+            <div className="flex px-4">
+                <button class="text-lg px-6 py-4 my-12 relative flex h-[50px] w-40 items-center justify-center overflow-hidden bg-primary text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-blue-600 before:duration-500 before:ease-out hover:shadow-blue-600 hover:before:h-56 hover:before:w-56">
+                    <span class="relative z-10">Book Now</span>
                 </button>
             </div>
 
