@@ -73,15 +73,6 @@ const MainContent = () => {
                                         View Our Villas
                                     </span>
                                 </button>
-                                <DatePicker
-                                    selected={startDate}
-                                    onChange={onChange}
-                                    startDate={startDate}
-                                    endDate={endDate}
-                                    selectsRange
-                                    dateFormat="dd/MM/yyyy"
-                                    className="text-black"
-                                />
                             </div>
                         </div>
                     </div>
