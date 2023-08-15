@@ -4,7 +4,7 @@ import FacebookLogo from "../img/Facebook-Logo.svg";
 
 const Header = () => {
     return (
-        <header className="flex flex-row justify-center align-middle bg-accent w-full text-">
+        <header className="flex flex-row justify-center align-middle bg-accent w-full">
             <a className="pr-32" href="#home">
                 <img
                     src={Logo}

@@ -61,3 +61,11 @@
         fill: hsla(189, 68%, 75%, 0%);
     }
 }
+
+.divider {
+    width: 0.2rem;
+    height: 8rem;
+    background-color: #cccccca2;
+    margin: 0px 20px;
+    border-radius: 10%;
+}

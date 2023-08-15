@@ -4,21 +4,11 @@ import second from "../img/second.jpg";
 import third from "../img/third.jpg";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import "../index.css"; // Assuming you have a styles.css file for your custom styles
+import "../index.css";
 
 const MainContent = () => {
     const imgUrls = [first, second, third];
     const [currentZIndex, setCurrentZIndex] = useState(0);
-
-    const [date, setDate] = useState(new Date());
-    const [startDate, setStartDate] = useState();
-    const [endDate, setEndDate] = useState();
-
-    const onChange = (range) => {
-        const [startDate, endDate] = range;
-        setStartDate(startDate);
-        setEndDate(endDate);
-    };
 
     useEffect(() => {
         const interval = setInterval(() => {
