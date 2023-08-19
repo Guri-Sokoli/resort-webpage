@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import first from "../img/first.jpg";
 import second from "../img/second.jpg";
 import third from "../img/third.jpg";
-import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import "../index.css";
+import { ActionButton } from "./ActionButton";
 
 const MainContent = () => {
     const imgUrls = [first, second, third];
@@ -58,11 +58,7 @@ const MainContent = () => {
                                     You are a few clicks away from the best
                                     vacation of your life.
                                 </h2>
-                                <button class="text-lg px-6 py-4 my-12 relative flex h-[50px] w-42 items-center justify-center overflow-hidden bg-primary text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-blue-600 before:duration-500 before:ease-out hover:shadow-blue-600 hover:before:h-56 hover:before:w-56">
-                                    <span class="relative">
-                                        View Our Villas
-                                    </span>
-                                </button>
+                                <ActionButton text="View Options" />
                             </div>
                         </div>
                     </div>

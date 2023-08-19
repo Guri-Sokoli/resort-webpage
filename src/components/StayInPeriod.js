@@ -1,3 +1,5 @@
+import { ActionButton } from "./ActionButton";
+
 const StayInPeriod = () => {
     return (
         <div className="bg-secondary text-black border-2">
@@ -36,9 +38,11 @@ const StayInPeriod = () => {
                     <div className="divider"></div>
                 </div>
                 {/* button under this comment needs better fitting, i need to componentinize this code later */}
-                <button class="text-lg px-6 py-4 my-12 relative flex h-[50px] w-40 items-center justify-center overflow-hidden bg-primary text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-blue-600 before:duration-500 before:ease-out hover:shadow-blue-600 hover:before:h-56 hover:before:w-56">
-                    <span class="relative z-10">Check Avalibility</span>
-                </button>
+                <ActionButton
+                    text="Check Availibility"
+                    padx="px-1"
+                    pady="py-1"
+                />
             </form>
         </div>
     );
