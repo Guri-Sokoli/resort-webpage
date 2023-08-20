@@ -2,7 +2,7 @@ import InstagramLogo from "../img/Instagram-Logo.svg";
 import FacebookLogo from "../img/Facebook-Logo.svg";
 export const SocialMediaLinks = () => {
     return (
-        <div>
+        <div className="flex flex-row justify-center items-center px-8">
             <button className="px-2">
                 <a href="https://www.instagram.com/">
                     <img

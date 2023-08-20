@@ -1,7 +1,7 @@
-import { ActionButton } from "./ActionButton";
-import { HeaderLink } from "./HeaderLink";
-import { ResortLogo } from "./ResortLogo";
-import { SocialMediaLinks } from "./SocialMediaLinks";
+import { ActionButton } from "./components/ActionButton";
+import { HeaderLink } from "./components/HeaderLink";
+import { ResortLogo } from "./components/ResortLogo";
+import { SocialMediaLinks } from "./components/SocialMediaLinks";
 
 const Header = () => {
     return (
@@ -16,10 +16,7 @@ const Header = () => {
                 <HeaderLink href="#contact">Contact Us</HeaderLink>
             </ul>
             <ActionButton text="Book Now" />
-
-            <div className="flex justify-center items-center pl-32">
-                <SocialMediaLinks />
-            </div>
+            <SocialMediaLinks />
         </header>
     );
 };
