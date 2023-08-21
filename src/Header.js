@@ -5,7 +5,7 @@ import { SocialMediaLinks } from "./components/SocialMediaLinks";
 
 const Header = () => {
     return (
-        <header className="flex flex-row justify-center align-middle bg-accent w-full">
+        <header className="flex flex-row justify-center items-center bg-accent h-32">
             <ResortLogo />
             <ul className="flex items-center">
                 <HeaderLink href="#home">Home</HeaderLink>
@@ -15,7 +15,7 @@ const Header = () => {
                 <HeaderLink href="#news">News</HeaderLink>
                 <HeaderLink href="#contact">Contact Us</HeaderLink>
             </ul>
-            <ActionButton text="Book Now" />
+            <ActionButton text="Book Now" buttonBgColor="bg-primary" />
             <SocialMediaLinks />
         </header>
     );

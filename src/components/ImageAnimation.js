@@ -50,7 +50,10 @@ export const ImageAnimation = (props) => {
                                 You are a few clicks away from the best vacation
                                 of your life.
                             </h2>
-                            <ActionButton text="View Options" />
+                            <ActionButton
+                                text="View Options"
+                                buttonBgColor="bg-primary"
+                            />
                         </div>
                     </div>
                 </div>
