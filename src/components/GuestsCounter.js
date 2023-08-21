@@ -17,22 +17,22 @@ const GuestsCounter = () => {
 
     return (
         <div className="flex flex-col justify-center items-center">
-            <h1 className="text-4xl">Number of Guests</h1>
-            <div className="flex flex-row items-center pt-4">
-                <h3 className="flex justify-center items-center text-3xl text-white bg-primary rounded-md mr-6 w-12 h-12">
+            <h1 className="text-4xl pb-4">Number of Guests</h1>
+            <div className="flex flex-row items-center">
+                <div className="flex justify-center items-center text-3xl text-white bg-primary rounded-md pb-2 mr-6 w-12 h-12 outline outline-black outline-2 outline-offset-2">
                     {guestCount}
-                </h3>
+                </div>
                 <div className="flex flex-col">
                     <button
                         type="button"
-                        className="border border-black px-3 text-4xl"
+                        className="outline outline-black text-4xl rounded-md mb-2 w-10 text-primary"
                         onClick={handleIncrement}
                     >
                         +
                     </button>
                     <button
                         type="button"
-                        className="border border-black px-3 text-4xl"
+                        className="outline outline-black text-4xl rounded-md text-red-800"
                         onClick={handleDecrement}
                     >
                         -

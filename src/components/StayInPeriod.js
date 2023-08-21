@@ -38,13 +38,21 @@ const StayInPeriod = () => {
         ? "bg-gray-400 cursor-not-allowed"
         : "bg-primary";
 
+    const checkInInputClassName = `text-center h-12 rounded-md text-2xl ${
+        inValue.startDate ? "bg-primary text-white" : "text-black"
+    }`;
+
+    const checkOutInputClassName = `text-center h-12 rounded-md text-2xl ${
+        outValue.startDate ? "bg-primary text-white" : "text-black"
+    }`;
+
     return (
         <div className="bg-secondary text-black">
             <form className="flex flex-row justify-around align-middle bg-white border-2 border-black mx-32 my-32 py-16">
                 <div className="flex flex-col justify-center items-center ml-20">
                     <div className="flex flex-col justify-center items-center">
                         <h1 className="text-4xl mb-6">Check-In</h1>
-                        <div className="rounded-md hover:outline outline-2 outline-offset-2">
+                        <div className="rounded-md outline outline-2 outline-offset-2">
                             <Datepicker
                                 disabledDates={[
                                     {
@@ -62,7 +70,7 @@ const StayInPeriod = () => {
                                 // minDate={new Date("2023-01-05")}
                                 // maxDate={new Date("2030-01-30")}
                                 startFrom={"today"}
-                                inputClassName="text-center text-white h-12 rounded-md bg-primary text-white text-2xl"
+                                inputClassName={`text-center text-black h-12 rounded-md text-2xl ${checkInInputClassName}`}
                                 primaryColor={"emerald"}
                                 popoverDirection="down"
                                 asSingle={true}
@@ -79,7 +87,7 @@ const StayInPeriod = () => {
                     <h1 className="text-4xl mb-6">Check-Out</h1>
                     <div
                         className={
-                            "rounded-md outline-offset-2 hover:outline outline-2"
+                            "rounded-md outline-offset-2 outline outline-2"
                         }
                     >
                         <Datepicker
@@ -97,18 +105,13 @@ const StayInPeriod = () => {
                             inputClassName={`text-center h-12 rounded-md text-2xl ${
                                 !isValid
                                     ? "bg-red-400 text-black"
-                                    : "bg-primary text-white"
-                            }`}
+                                    : "text-black"
+                            }${checkOutInputClassName}`}
                             primaryColor={!isValid ? "red" : "emerald"}
                             popoverDirection="down"
                             asSingle={true}
                             value={outValue}
                             onChange={handleOutValueChange}
-                            fill={
-                                !isValid
-                                    ? "bg-gray-400 cursor-not-allowed"
-                                    : "bg-primary"
-                            }
                         />
                     </div>
                 </div>
@@ -127,6 +130,8 @@ const StayInPeriod = () => {
                         disabled={isButtonDisabled}
                         buttonBgColor={buttonBgColor}
                     />
+                    {/* https://flowbite.com/docs/components/tooltips/ */}
+                    {/* ^^^ this is needed for tooltip on hover ^^^ */}
                 </div>
             </form>
         </div>
