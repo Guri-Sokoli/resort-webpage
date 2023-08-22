@@ -8,7 +8,7 @@ const Header = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <header className="flex flex-row justify-center items-center bg-accent h-32">
+        <header className="flex flex-row justify-around items-center bg-accent h-32">
             <ResortLogo />
             <ul className="flex items-center">
                 <HeaderLink href="#home">Home</HeaderLink>
