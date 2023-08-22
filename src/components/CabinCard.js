@@ -18,15 +18,15 @@ export const CabinCard = (props) => {
                     <p className="text-2xl py-2">4 Guests</p>
                     <p className="text-2xl py-2 pl-12">2 Bedrooms</p>
                 </div>
-                {/* <div className="flex flex-row">
+                <div className="flex flex-row">
                     <p
-                        className="text-2xl py-2 text-wrap
+                        className="text-2xl py-2 text-wrap break-words
                     "
                     >
                         The 2 bedrooms are perfect for a family or friends
                         getaway
                     </p>
-                </div> */}
+                </div>
                 {/* this up here does a big bad, needs fix ^^^ */}
             </div>
         </div>
