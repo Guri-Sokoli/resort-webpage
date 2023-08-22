@@ -1,10 +1,11 @@
 import Datepicker from "react-tailwindcss-datepicker";
 import { useState } from "react";
-import { ActionButton } from "./ActionButton";
-import GuestsCounter from "./GuestsCounter";
+import { ActionButton } from "./components/ActionButton";
+import GuestsCounter from "./components/GuestsCounter";
 
 const StayInPeriod = () => {
     const [isValid, setIsValid] = useState(false);
+
     const [inValue, setInValue] = useState({
         startDate: null,
         endDate: null,
@@ -39,11 +40,15 @@ const StayInPeriod = () => {
         : "bg-primary";
 
     const checkInInputClassName = `text-center h-12 rounded-md text-2xl ${
-        inValue.startDate ? "bg-primary text-white" : "text-black"
+        inValue.startDate ? "bg-primary text-white" : ""
     }`;
 
     const checkOutInputClassName = `text-center h-12 rounded-md text-2xl ${
-        outValue.startDate ? "bg-primary text-white" : "text-black"
+        outValue.startDate
+            ? outValue.endDate <= inValue.startDate
+                ? "bg-red-500 text-black"
+                : "bg-primary text-white"
+            : ""
     }`;
 
     return (
@@ -70,7 +75,7 @@ const StayInPeriod = () => {
                                 // minDate={new Date("2023-01-05")}
                                 // maxDate={new Date("2030-01-30")}
                                 startFrom={"today"}
-                                inputClassName={`text-center text-black h-12 rounded-md text-2xl ${checkInInputClassName}`}
+                                inputClassName={`${checkInInputClassName} text-center text-black h-12 rounded-md text-2xl`}
                                 primaryColor={"emerald"}
                                 popoverDirection="down"
                                 asSingle={true}
@@ -81,7 +86,7 @@ const StayInPeriod = () => {
                     </div>
                 </div>
                 <div className="flex justify-center items-center align-middle">
-                    <div className="divider"></div>
+                    <div className="verticalDivider"></div>
                 </div>
                 <div className="flex flex-col justify-center items-center">
                     <h1 className="text-4xl mb-6">Check-Out</h1>
@@ -91,22 +96,13 @@ const StayInPeriod = () => {
                         }
                     >
                         <Datepicker
-                            disabledDates={
-                                [
-                                    // ... (disabledDates configuration)
-                                ]
-                            }
                             placeholder="Year-Month-Day"
                             useRange={false}
                             startWeekOn="sun"
                             minDate={new Date("2023-01-05")}
                             maxDate={new Date("2030-01-30")}
                             startFrom={"today"}
-                            inputClassName={`text-center h-12 rounded-md text-2xl ${
-                                !isValid
-                                    ? "bg-red-400 text-black"
-                                    : "text-black"
-                            }${checkOutInputClassName}`}
+                            inputClassName={`${checkOutInputClassName} text-center h-12 rounded-md text-2xl`}
                             primaryColor={!isValid ? "red" : "emerald"}
                             popoverDirection="down"
                             asSingle={true}
@@ -116,11 +112,11 @@ const StayInPeriod = () => {
                     </div>
                 </div>
                 <div className="flex justify-center items-center align-middle">
-                    <div className="divider"></div>
+                    <div className="verticalDivider"></div>
                 </div>
                 <GuestsCounter />
                 <div className="flex justify-center items-center align-middle">
-                    <div className="divider"></div>
+                    <div className="verticalDivider"></div>
                 </div>
                 <div className="flex flex-col justify-center items-center mr-10">
                     <ActionButton

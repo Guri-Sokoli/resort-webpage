@@ -1,6 +1,7 @@
 import Header from "./Header";
 import MainContent from "./MainContent";
-import StayInPeriod from "./components/StayInPeriod";
+import StayInPeriod from "./StayInPeriod";
+import AccomodationRec from "./AccomodationRec";
 
 function App() {
     return (
@@ -8,6 +9,7 @@ function App() {
             <Header />
             <MainContent />
             <StayInPeriod />
+            <AccomodationRec />
         </div>
     );
 }

@@ -62,10 +62,18 @@
     }
 }
 
-.divider {
+.verticalDivider {
     width: 0.2rem;
     height: 8rem;
     background-color: #cccccca2;
     margin: 0px 20px;
+    border-radius: 10%;
+}
+
+.horizontalDivider {
+    width: 8rem;
+    height: 0.2rem;
+    background-color: #cccccca2;
+    margin: 20px 0px;
     border-radius: 10%;
 }
