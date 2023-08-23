@@ -77,3 +77,11 @@
     margin: 20px 0px;
     border-radius: 10%;
 }
+
+.horizontalDividerAuto {
+    width: auto;
+    height: 0.1rem;
+    background-color: #cccccc84;
+    margin: 20px 0px;
+    border-radius: 10%;
+}
