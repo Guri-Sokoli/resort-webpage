@@ -52,8 +52,8 @@ const StayInPeriod = () => {
     }`;
 
     return (
-        <div className="bg-secondary text-black">
-            <form className="flex flex-row justify-around align-middle bg-white border-2 border-black mx-32 my-32 py-16">
+        <div className="bg-white text-black">
+            <form className="flex flex-row justify-around align-middle bg-secondary border-2 border-black mx-32 my-32 py-16">
                 <div className="flex flex-col justify-center items-center ml-20">
                     <div className="flex flex-col justify-center items-center">
                         <h1 className="text-4xl mb-6">Check-In</h1>
