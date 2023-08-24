@@ -1,8 +1,8 @@
-import Header from "./Header";
-import MainContent from "./MainContent";
-import StayInPeriod from "./StayInPeriod";
-import AccomodationRec from "./AccomodationRec";
-import ParallaxAboutUs from "./ParallaxAboutUs";
+import Header from "./pages/Home/Header";
+import MainContent from "./pages/Home/MainContent";
+import StayInPeriod from "./pages/Home/StayInPeriod";
+import AccomodationRec from "./pages/Home/AccomodationRec";
+import ParallaxAboutUs from "./pages/Home/ParallaxAboutUs";
 
 function App() {
     return (

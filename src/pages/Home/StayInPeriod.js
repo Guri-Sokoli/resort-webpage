@@ -1,7 +1,7 @@
 import Datepicker from "react-tailwindcss-datepicker";
 import { useState } from "react";
-import { ActionButton } from "./components/ActionButton";
-import GuestsCounter from "./components/GuestsCounter";
+import { ActionButton } from "../../components/ActionButton";
+import GuestsCounter from "../../components/GuestsCounter";
 
 const StayInPeriod = () => {
     const [isValid, setIsValid] = useState(false);

@@ -1,6 +1,6 @@
 import "react-datepicker/dist/react-datepicker.css";
-import "../src/index.css";
-import { ImageAnimation } from "./components/ImageAnimation";
+import "../../index.css";
+import { ImageAnimation } from "../../components/ImageAnimation";
 
 const MainContent = () => {
     return (
