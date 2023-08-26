@@ -35,7 +35,7 @@ export const ImageAnimation = (props) => {
                         <div className="absolute inset-0 bg-black opacity-70"></div>
                         <div className="flex flex-col justify-center items-center w-full h-full relative z-20">
                             <div className="flex justify-center items-center">
-                                <svg className="w-screen">
+                                <svg className="w-screen z-20">
                                     <text
                                         x="50%"
                                         y="60%"
