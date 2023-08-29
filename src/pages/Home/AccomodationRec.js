@@ -14,39 +14,48 @@ const AccomodationRec = () => {
             buttonPrice: "111",
             icons: [
                 {
-                    url: "https://mountainviewmanitoulin.com/wp-content/uploads/2017/07/icon-stove.png",
+                    url:
+                        "https://mountainviewmanitoulin.com/wp-content/uploads/2017/07/icon-stove.png",
                     title: "Oven Icon",
                 },
                 {
-                    url: "https://mountainviewmanitoulin.com/wp-content/uploads/2017/07/icon-picnic-table.png",
+                    url:
+                        "https://mountainviewmanitoulin.com/wp-content/uploads/2017/07/icon-picnic-table.png",
                     title: "Picnic Table Icon",
                 },
                 {
-                    url: "https://mountainviewmanitoulin.com/wp-content/uploads/2017/07/icon-microwave.png",
+                    url:
+                        "https://mountainviewmanitoulin.com/wp-content/uploads/2017/07/icon-microwave.png",
                     title: "Microwave Icon",
                 },
                 {
-                    url: "https://mountainviewmanitoulin.com/wp-content/uploads/2019/04/icon-10.png",
+                    url:
+                        "https://mountainviewmanitoulin.com/wp-content/uploads/2019/04/icon-10.png",
                     title: "Bath Icon",
                 },
                 {
-                    url: "https://mountainviewmanitoulin.com/wp-content/uploads/2017/07/icon-toaster.png",
+                    url:
+                        "https://mountainviewmanitoulin.com/wp-content/uploads/2017/07/icon-toaster.png",
                     title: "Kettle Icon",
                 },
                 {
-                    url: "https://mountainviewmanitoulin.com/wp-content/uploads/2017/06/icon-fridge.png",
+                    url:
+                        "https://mountainviewmanitoulin.com/wp-content/uploads/2017/06/icon-fridge.png",
                     title: "Fridge Icon",
                 },
                 {
-                    url: "https://mountainviewmanitoulin.com/wp-content/uploads/2017/06/icon-bbq.png",
+                    url:
+                        "https://mountainviewmanitoulin.com/wp-content/uploads/2017/06/icon-bbq.png",
                     title: "Grill Icon",
                 },
                 {
-                    url: "https://mountainviewmanitoulin.com/wp-content/uploads/2017/06/icon-coffee.png",
+                    url:
+                        "https://mountainviewmanitoulin.com/wp-content/uploads/2017/06/icon-coffee.png",
                     title: "Coffe Icon",
                 },
                 {
-                    url: "https://mountainviewmanitoulin.com/wp-content/uploads/2017/07/icon-pets.png",
+                    url:
+                        "https://mountainviewmanitoulin.com/wp-content/uploads/2017/07/icon-pets.png",
                     title: "Pet Icon",
                 },
             ],
@@ -63,23 +72,28 @@ const AccomodationRec = () => {
             buttonPrice: "222",
             icons: [
                 {
-                    url: "https://mountainviewmanitoulin.com/wp-content/uploads/2017/07/icon-stove.png",
+                    url:
+                        "https://mountainviewmanitoulin.com/wp-content/uploads/2017/07/icon-stove.png",
                     title: "Oven Icon",
                 },
                 {
-                    url: "https://mountainviewmanitoulin.com/wp-content/uploads/2017/07/icon-toaster.png",
+                    url:
+                        "https://mountainviewmanitoulin.com/wp-content/uploads/2017/07/icon-toaster.png",
                     title: "Kettle Icon",
                 },
                 {
-                    url: "https://mountainviewmanitoulin.com/wp-content/uploads/2017/06/icon-fridge.png",
+                    url:
+                        "https://mountainviewmanitoulin.com/wp-content/uploads/2017/06/icon-fridge.png",
                     title: "Fridge Icon",
                 },
                 {
-                    url: "https://mountainviewmanitoulin.com/wp-content/uploads/2017/06/icon-bbq.png",
+                    url:
+                        "https://mountainviewmanitoulin.com/wp-content/uploads/2017/06/icon-bbq.png",
                     title: "Grill Icon",
                 },
                 {
-                    url: "https://mountainviewmanitoulin.com/wp-content/uploads/2017/06/icon-coffee.png",
+                    url:
+                        "https://mountainviewmanitoulin.com/wp-content/uploads/2017/06/icon-coffee.png",
                     title: "Coffe Icon",
                 },
             ],
@@ -96,28 +110,34 @@ const AccomodationRec = () => {
             buttonPrice: "333",
             icons: [
                 {
-                    url: "https://mountainviewmanitoulin.com/wp-content/uploads/2017/07/icon-stove.png",
+                    url:
+                        "https://mountainviewmanitoulin.com/wp-content/uploads/2017/07/icon-stove.png",
                     title: "Oven Icon",
                 },
                 {
-                    url: "https://mountainviewmanitoulin.com/wp-content/uploads/2017/07/icon-picnic-table.png",
+                    url:
+                        "https://mountainviewmanitoulin.com/wp-content/uploads/2017/07/icon-picnic-table.png",
                     title: "Picnic Table Icon",
                 },
                 {
-                    url: "https://mountainviewmanitoulin.com/wp-content/uploads/2017/07/icon-microwave.png",
+                    url:
+                        "https://mountainviewmanitoulin.com/wp-content/uploads/2017/07/icon-microwave.png",
                     title: "Microwave Icon",
                 },
                 {
-                    url: "https://mountainviewmanitoulin.com/wp-content/uploads/2019/04/icon-10.png",
+                    url:
+                        "https://mountainviewmanitoulin.com/wp-content/uploads/2019/04/icon-10.png",
                     title: "Bath Icon",
                 },
                 {
-                    url: "https://mountainviewmanitoulin.com/wp-content/uploads/2017/07/icon-toaster.png",
+                    url:
+                        "https://mountainviewmanitoulin.com/wp-content/uploads/2017/07/icon-toaster.png",
                     title: "Kettle Icon",
                 },
 
                 {
-                    url: "https://mountainviewmanitoulin.com/wp-content/uploads/2017/07/icon-pets.png",
+                    url:
+                        "https://mountainviewmanitoulin.com/wp-content/uploads/2017/07/icon-pets.png",
                     title: "Pet Icon",
                 },
             ],

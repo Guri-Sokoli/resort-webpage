@@ -89,8 +89,10 @@ const Header = () => {
                 <HeaderLink href="#news">News</HeaderLink>
                 <HeaderLink href="#contact">Contact Us</HeaderLink>
             </ul>
-            <ActionButton text="Book Now" buttonBgColor="bg-primary" />
-            <SocialMediaLinks />
+            <div className="flex">
+                <ActionButton text="Book Now" buttonBgColor="bg-primary" />
+                <SocialMediaLinks />
+            </div>
         </header>
     );
 };
