@@ -4,6 +4,9 @@ import StayInPeriod from "./pages/Home/StayInPeriod";
 import AccomodationRec from "./pages/Home/AccomodationRec";
 import ParallaxAboutUs from "./pages/Home/ParallaxAboutUs";
 import HomeContactUs from "./pages/Home/HomeContactUs";
+import ParallaxAttractions from "./pages/Home/ParallaxAttractions";
+import Recommendations from "./pages/Home/Recommendations";
+import NewsSection from "./pages/Home/NewsSection";
 
 function App() {
     return (
@@ -17,6 +20,9 @@ function App() {
             <AccomodationRec />
             <ParallaxAboutUs />
             <HomeContactUs />
+            <ParallaxAttractions />
+            <Recommendations />
+            <NewsSection />
         </div>
     );
 }

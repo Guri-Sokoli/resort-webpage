@@ -2,7 +2,7 @@ import AboutUsCabin from "../../img/contactHome.jpg";
 
 const HomeContactUs = () => {
     return (
-        <div className="flex flex-row justify-around items-center bg-white pt-32">
+        <div className="flex flex-row justify-around items-center bg-white py-32">
             <div className="flex">
                 <a>
                     <img

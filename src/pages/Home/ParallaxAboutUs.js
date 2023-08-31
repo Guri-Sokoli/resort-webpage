@@ -58,7 +58,6 @@ const ParallaxAboutUs = () => {
                     vacation.
                 </p>
             </div>
-            {/* i gotta fix some paddin/margin/fitting te divav se shum i vogel po del divi ku osht pak text, garant veq do padding me ja jep edhe ndreqet */}
         </div>
     );
 };
