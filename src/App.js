@@ -7,6 +7,7 @@ import HomeContactUs from "./pages/Home/HomeContactUs";
 import ParallaxAttractions from "./pages/Home/ParallaxAttractions";
 import Recommendations from "./pages/Home/Recommendations";
 import NewsSection from "./pages/Home/NewsSection";
+import HomeQuickLinks from "./pages/Home/HomeQuickLinks";
 
 function App() {
     return (
@@ -23,6 +24,7 @@ function App() {
             <ParallaxAttractions />
             <Recommendations />
             <NewsSection />
+            <HomeQuickLinks />
         </div>
     );
 }

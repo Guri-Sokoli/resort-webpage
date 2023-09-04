@@ -1,7 +1,7 @@
 import Quotes from "../../img/quotes.svg";
 const NewsSection = () => {
     return (
-        <div className="flex flex-col items-center w-full h-max bg-white pb-32">
+        <div className="flex flex-col items-center w-full h-max bg-white">
             <div className="flex flex-col items-center text-gray-600 p-5">
                 <h1 className="text-6xl font-bold p-12">Stay Tuned</h1>
                 <p className="text-3xl py-2">Our News</p>
