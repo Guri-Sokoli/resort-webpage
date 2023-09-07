@@ -2,6 +2,7 @@ import Logo from "../../img/Resort-logos_white.png";
 import InstagramLogo from "../../img/Instagram-Logo.js";
 import FacebookLogo from "../../img/Facebook-Logo.js";
 import TwitterIcon from "../../img/Twitter-Logo.js";
+import RightArrowIcon from "../../img/RightArrowIcon.js";
 
 const HomeQuickLinks = () => {
     const bgView =
@@ -21,7 +22,7 @@ const HomeQuickLinks = () => {
             style={containerStyle}
         >
             <div className="flex flex-row justify-center items-center bg-white w-full mx-24 text-black">
-                <div className="flex flex-col p-16 w-7/12">
+                <div className="flex flex-col p-8 pl-12 w-7/12">
                     <img
                         src={Logo}
                         alt="logo"
@@ -60,38 +61,121 @@ const HomeQuickLinks = () => {
                 <div className="flex flex-col justify-center w-5/12 h-max">
                     <div className="flex flex-row justify-center items-center align-center">
                         <div className="flex flex-col justify-start w-full h-full">
-                            <p className="text-2xl">Quick Links</p>
+                            <p className="text-xl font-bold">Quick Links</p>
                             <br />
-                            <ul>
-                                <p>About Us</p>
-                                <p>News</p>
-                                <p>Contact</p>
-                                <p>Book Now</p>
+                            <ul className="flex flex-col space-y-2">
+                                <p className="flex flex-row items-center">
+                                    <RightArrowIcon fill="#878787" />
+                                    <button>
+                                        <a>
+                                            <p className="pl-1">About Us</p>
+                                        </a>
+                                    </button>
+                                </p>
+                                <p className="flex flex-row items-center">
+                                    <RightArrowIcon fill="#878787" />
+                                    <button>
+                                        <a>
+                                            <p className="pl-1">News</p>
+                                        </a>
+                                    </button>
+                                </p>
+                                <p className="flex flex-row items-center">
+                                    <RightArrowIcon fill="#878787" />
+                                    <button>
+                                        <a>
+                                            <p className="pl-1">Contact</p>
+                                        </a>
+                                    </button>
+                                </p>
+                                <p className="flex flex-row items-center">
+                                    <RightArrowIcon fill="#878787" />
+                                    <button>
+                                        <a>
+                                            <p className="pl-1">Book Now</p>
+                                        </a>
+                                    </button>
+                                </p>
                             </ul>
                         </div>
                         <div className="flex flex-col justify-start w-full h-full">
-                            <p>Our Cabins</p>
+                            <p className="text-xl font-bold">Our Cabins</p>
                             <br />
-                            <ul>
-                                <p>Cabin One</p>
-                                <p>Cabin Two</p>
-                                <p>Cabin Three</p>
-                                <p>Cabin Four</p>
+                            <ul className="flex flex-col space-y-2">
+                                <p className="flex flex-row items-center">
+                                    <RightArrowIcon fill="#878787" />
+                                    <button>
+                                        <a>
+                                            <p className="pl-1">Cabin One</p>
+                                        </a>
+                                    </button>
+                                </p>
+                                <p className="flex flex-row items-center">
+                                    <RightArrowIcon fill="#878787" />
+                                    <button>
+                                        <a>
+                                            <p className="pl-1">Cabin Two</p>
+                                        </a>
+                                    </button>
+                                </p>
+                                <p className="flex flex-row items-center">
+                                    <RightArrowIcon fill="#878787" />
+                                    <button>
+                                        <a>
+                                            <p className="pl-1">Cabin Three</p>
+                                        </a>
+                                    </button>
+                                </p>
+                                <p className="flex flex-row items-center">
+                                    <RightArrowIcon fill="#878787" />
+                                    <button>
+                                        <a>
+                                            <p className="pl-1">Cabin Four</p>
+                                        </a>
+                                    </button>
+                                </p>
                             </ul>
                         </div>
                         <div className="flex flex-col justify-start w-full h-full">
                             <br />
-                            <ul>
-                                <p>Cabin Five</p>
-                                <p>Cabin Six</p>
-                                <p>Cabin Seven</p>
-                                <p>Cabin Eight</p>
+                            <br />
+                            <ul className="flex flex-col space-y-2">
+                                <p className="flex flex-row items-center">
+                                    <RightArrowIcon fill="#878787" />
+                                    <button>
+                                        <a>
+                                            <p className="pl-1">Cabin Five</p>
+                                        </a>
+                                    </button>
+                                </p>
+                                <p className="flex flex-row items-center">
+                                    <RightArrowIcon fill="#878787" />
+                                    <button>
+                                        <a>
+                                            <p className="pl-1">Cabin Six</p>
+                                        </a>
+                                    </button>
+                                </p>
+                                <p className="flex flex-row items-center">
+                                    <RightArrowIcon fill="#878787" />
+                                    <button>
+                                        <a>
+                                            <p className="pl-1">Cabin Seven</p>
+                                        </a>
+                                    </button>
+                                </p>
+                                <p className="flex flex-row items-center">
+                                    <RightArrowIcon fill="#878787" />
+                                    <button>
+                                        <a>
+                                            <p className="pl-1">Cabin Eight</p>
+                                        </a>
+                                    </button>
+                                </p>
                             </ul>
                         </div>
                     </div>
                 </div>
-
-                {/* sjom ka di qysh me centirat qito nalt, might have to take a different approach */}
             </div>
             <div className="flex flex-row justify-between bg-accent py-6 w-full h-max px-8">
                 <p>© 2023 Webpage Resort</p>

@@ -1,4 +1,9 @@
 export const ActionButton = (props) => {
+    const handleClick = () => {
+        if (props.href && !props.disabled) {
+            window.location.href = props.href;
+        }
+    };
     return (
         <div className="">
             <button
@@ -12,6 +17,7 @@ export const ActionButton = (props) => {
                         ? ""
                         : "hover:shadow-blue-600 hover:before:h-56 hover:before:w-56"
                 }`}
+                onClick={handleClick}
             >
                 <span className="relative z-10">{props.text}</span>
             </button>

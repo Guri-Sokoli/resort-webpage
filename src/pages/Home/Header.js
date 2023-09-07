@@ -90,7 +90,11 @@ const Header = () => {
                 <HeaderLink href="#contact">Contact Us</HeaderLink>
             </ul>
             <div className="flex">
-                <ActionButton text="Book Now" buttonBgColor="bg-primary" />
+                <ActionButton
+                    href="/booking"
+                    text="Book Now"
+                    buttonBgColor="bg-primary"
+                />
                 <SocialMediaLinks />
             </div>
         </header>
