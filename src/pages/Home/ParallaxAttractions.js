@@ -43,8 +43,8 @@ const ParallaxAttractions = () => {
                     </p>
                 </div>
                 <ActionButton
-                    text="VIEW ALL"
-                    buttonBgColor="bg-primary text-xl"
+                    text="View All"
+                    buttonBgColor="bg-primary text-lg"
                 />
             </div>
         </div>

@@ -22,7 +22,7 @@ const HomeQuickLinks = () => {
             style={containerStyle}
         >
             <div className="flex flex-row justify-center items-center bg-white w-full mx-24 text-black">
-                <div className="flex flex-col p-8 pl-12 w-7/12">
+                <div className="flex flex-col pb-8 pt-8 pl-12 w-7/12">
                     <img
                         src={Logo}
                         alt="logo"
@@ -30,7 +30,7 @@ const HomeQuickLinks = () => {
                         height={85}
                         className=" bg-accent rounded-full"
                     />
-                    <p className="text-xl tracking-widest leading-10 pt-12">
+                    <p className="text-xl tracking-widest leading-10 pt-8">
                         Come and visit Mountain View Resort on beautiful Lake
                         Manitou! We have the perfect spot for a holiday that the
                         entire family will enjoy.
@@ -61,10 +61,12 @@ const HomeQuickLinks = () => {
                 <div className="flex flex-col justify-center w-5/12 h-max">
                     <div className="flex flex-row justify-center items-center align-center">
                         <div className="flex flex-col justify-start w-full h-full">
-                            <p className="text-xl font-bold">Quick Links</p>
-                            <br />
+                            <p className="text-xl font-bold pb-4">
+                                Quick Links
+                            </p>
+
                             <ul className="flex flex-col space-y-2">
-                                <p className="flex flex-row items-center">
+                                <p className="flex flex-row items-center transform transition duration-100 hover:scale-105">
                                     <RightArrowIcon fill="#878787" />
                                     <button>
                                         <a>
@@ -72,7 +74,7 @@ const HomeQuickLinks = () => {
                                         </a>
                                     </button>
                                 </p>
-                                <p className="flex flex-row items-center">
+                                <p className="flex flex-row items-center transform transition duration-100 hover:scale-105">
                                     <RightArrowIcon fill="#878787" />
                                     <button>
                                         <a>
@@ -80,7 +82,7 @@ const HomeQuickLinks = () => {
                                         </a>
                                     </button>
                                 </p>
-                                <p className="flex flex-row items-center">
+                                <p className="flex flex-row items-center transform transition duration-100 hover:scale-105">
                                     <RightArrowIcon fill="#878787" />
                                     <button>
                                         <a>
@@ -88,7 +90,7 @@ const HomeQuickLinks = () => {
                                         </a>
                                     </button>
                                 </p>
-                                <p className="flex flex-row items-center">
+                                <p className="flex flex-row items-center transform transition duration-100 hover:scale-105">
                                     <RightArrowIcon fill="#878787" />
                                     <button>
                                         <a>
@@ -99,10 +101,10 @@ const HomeQuickLinks = () => {
                             </ul>
                         </div>
                         <div className="flex flex-col justify-start w-full h-full">
-                            <p className="text-xl font-bold">Our Cabins</p>
+                            <p className="text-xl font-bold pb-4">Our Cabins</p>
                             <br />
                             <ul className="flex flex-col space-y-2">
-                                <p className="flex flex-row items-center">
+                                <p className="flex flex-row items-center transform transition duration-100 hover:scale-105">
                                     <RightArrowIcon fill="#878787" />
                                     <button>
                                         <a>
@@ -110,7 +112,7 @@ const HomeQuickLinks = () => {
                                         </a>
                                     </button>
                                 </p>
-                                <p className="flex flex-row items-center">
+                                <p className="flex flex-row items-center transform transition duration-100 hover:scale-105">
                                     <RightArrowIcon fill="#878787" />
                                     <button>
                                         <a>
@@ -118,7 +120,7 @@ const HomeQuickLinks = () => {
                                         </a>
                                     </button>
                                 </p>
-                                <p className="flex flex-row items-center">
+                                <p className="flex flex-row items-center transform transition duration-100 hover:scale-105">
                                     <RightArrowIcon fill="#878787" />
                                     <button>
                                         <a>
@@ -126,7 +128,7 @@ const HomeQuickLinks = () => {
                                         </a>
                                     </button>
                                 </p>
-                                <p className="flex flex-row items-center">
+                                <p className="flex flex-row items-center transform transition duration-100 hover:scale-105">
                                     <RightArrowIcon fill="#878787" />
                                     <button>
                                         <a>
@@ -139,8 +141,8 @@ const HomeQuickLinks = () => {
                         <div className="flex flex-col justify-start w-full h-full">
                             <br />
                             <br />
-                            <ul className="flex flex-col space-y-2">
-                                <p className="flex flex-row items-center">
+                            <ul className="flex flex-col space-y-2 pt-10">
+                                <p className="flex flex-row items-center transform transition duration-100 hover:scale-105">
                                     <RightArrowIcon fill="#878787" />
                                     <button>
                                         <a>
@@ -148,7 +150,7 @@ const HomeQuickLinks = () => {
                                         </a>
                                     </button>
                                 </p>
-                                <p className="flex flex-row items-center">
+                                <p className="flex flex-row items-center transform transition duration-100 hover:scale-105">
                                     <RightArrowIcon fill="#878787" />
                                     <button>
                                         <a>
@@ -156,7 +158,7 @@ const HomeQuickLinks = () => {
                                         </a>
                                     </button>
                                 </p>
-                                <p className="flex flex-row items-center">
+                                <p className="flex flex-row items-center transform transition duration-100 hover:scale-105">
                                     <RightArrowIcon fill="#878787" />
                                     <button>
                                         <a>
@@ -164,7 +166,7 @@ const HomeQuickLinks = () => {
                                         </a>
                                     </button>
                                 </p>
-                                <p className="flex flex-row items-center">
+                                <p className="flex flex-row items-center transform transition duration-100 hover:scale-105">
                                     <RightArrowIcon fill="#878787" />
                                     <button>
                                         <a>

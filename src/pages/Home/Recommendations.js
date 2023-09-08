@@ -3,7 +3,7 @@ import HikingImg from "../../img/hiking0.jpg";
 const Recommendations = () => {
     return (
         <div className="flex flex-row justify-center items-center py-16 pt-32">
-            <div className="flex flex-col justify-center items-center pr-24 text-black">
+            <div className="flex flex-col justify-center items-center pr-24 text-black transform transition duration-300 hover:scale-105">
                 <img src={DiningImg} alt="Dining Image" width={350} />
                 <h2 className="text-5xl pt-10 pb-6">Dining</h2>
                 <h3 className="text-xl pb-10">Amazing Restaurants</h3>
@@ -11,7 +11,7 @@ const Recommendations = () => {
                     <a href="/dining">View Details</a>
                 </button>
             </div>
-            <div className="flex flex-col justify-center items-center text-black">
+            <div className="flex flex-col justify-center items-center text-black transform transition duration-300 hover:scale-105">
                 <img src={HikingImg} alt="Rectangle-2" width={350} />
                 <h2 className="text-5xl pt-10 pb-6">Hiking</h2>
                 <h3 className="text-xl pb-10">Epic Trails</h3>

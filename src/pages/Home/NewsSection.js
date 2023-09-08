@@ -9,14 +9,14 @@ const NewsSection = () => {
                 <div class="container mx-auto p-4">
                     <div class="grid grid-cols-2 md:grid-cols-3 gap-10">
                         <div class="grid gap-4">
-                            <div>
+                            <div className="transform transition duration-300 hover:scale-105">
                                 <img
                                     class="h-auto max-w-full rounded-lg"
                                     src="https://upload.wikimedia.org/wikipedia/commons/0/03/Kashi_Vishwanath_Temple_Banaras.jpg"
                                     alt=""
                                 />
                             </div>
-                            <div className="flex flex-col justify-center items-center bg-green-400 text-3xl text-center text-white rounded-md">
+                            <div className="flex flex-col justify-center items-center bg-green-400 text-3xl text-center text-white rounded-md transform transition duration-300 hover:scale-105">
                                 <h1 className="pt-16">
                                     "Peaceful place paired up with a beautiful
                                     scenery!"
@@ -34,7 +34,7 @@ const NewsSection = () => {
                                     <p className="">Guri S</p>
                                 </div>
                             </div>
-                            <div>
+                            <div className="transform transition duration-300 hover:scale-105">
                                 <img
                                     class="h-auto max-w-full rounded-lg"
                                     src="https://pbs.twimg.com/media/FGRnNpAVUAYqRYv?format=jpg&name=large"
@@ -43,14 +43,14 @@ const NewsSection = () => {
                             </div>
                         </div>
                         <div class="grid gap-4">
-                            <div>
+                            <div className="transform transition duration-300 hover:scale-105">
                                 <img
                                     class="h-auto max-w-full rounded-lg"
                                     src="https://pbs.twimg.com/media/FGRnP_TUUAAttG3?format=jpg&name=large"
                                     alt=""
                                 />
                             </div>
-                            <div>
+                            <div className="transform transition duration-300 hover:scale-105">
                                 <img
                                     class="h-auto max-w-full rounded-lg"
                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Benares-_The_Golden_Temple%2C_India%2C_ca._1915_%28IMP-CSCNWW33-OS14-66%29.jpg/1280px-Benares-_The_Golden_Temple%2C_India%2C_ca._1915_%28IMP-CSCNWW33-OS14-66%29.jpg"
@@ -59,12 +59,14 @@ const NewsSection = () => {
                             </div>
                         </div>
                         <div class="grid gap-4">
-                            <img
-                                class="h-auto rounded-lg"
-                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Ahilya_Ghat_by_the_Ganges%2C_Varanasi.jpg/800px-Ahilya_Ghat_by_the_Ganges%2C_Varanasi.jpg"
-                                alt=""
-                            />
-                            <div>
+                            <div className="transform transition duration-300 hover:scale-105">
+                                <img
+                                    class="h-auto rounded-lg"
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Ahilya_Ghat_by_the_Ganges%2C_Varanasi.jpg/800px-Ahilya_Ghat_by_the_Ganges%2C_Varanasi.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div className="transform transition duration-300 hover:scale-105">
                                 <img
                                     class="h-auto max-w-full rounded-lg"
                                     src="https://upload.wikimedia.org/wikipedia/commons/2/25/Chet_Singh_Ghat_in_Varanasi.jpg"

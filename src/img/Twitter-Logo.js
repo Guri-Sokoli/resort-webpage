@@ -1,11 +1,12 @@
 const TwitterIcon = (props) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
-        width={25}
-        height={25}
+        width={35}
+        height={35}
         fill="currentColor"
         className="bi bi-twitter"
         viewBox="0 0 16 16"
+        className="transform transition duration-100 hover:scale-125"
     >
         <path
             fill-rule="evenodd"
