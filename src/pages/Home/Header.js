@@ -10,7 +10,7 @@ const Header = () => {
 
     const handleScroll = () => {
         const scrollPosition = window.scrollY;
-        const shouldSticky = scrollPosition > 1000; // Adjust the scroll position threshold as needed
+        const shouldSticky = scrollPosition > 1000;
 
         setIsSticky(shouldSticky);
     };
@@ -29,12 +29,13 @@ const Header = () => {
                 // duhet qitu me ndreq me bo ma smooth, edhe mundsisht mos me downloadu libraria
             }`}
         >
+            {/* also fix other buttons and Header Links */}
             <ResortLogo />
             <ul className="flex items-center">
-                <HeaderLink href="#home">Home</HeaderLink>
+                <HeaderLink to="/">Home</HeaderLink>
                 <div onMouseLeave={() => setOpen(false)} className="relative">
                     <button onMouseOver={() => setOpen(true)}>
-                        <HeaderLink href="#accommodations">
+                        <HeaderLink to="/select">
                             Accommodations
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -91,9 +92,9 @@ const Header = () => {
             </ul>
             <div className="flex">
                 <ActionButton
-                    href="/booking"
                     text="Book Now"
                     buttonBgColor="bg-primary"
+                    to="/select"
                 />
                 <SocialMediaLinks />
             </div>
