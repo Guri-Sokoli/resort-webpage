@@ -1,7 +1,11 @@
+import { useNavigate } from "react-router-dom";
+
 export const ActionButton = (props) => {
+    const navigate = useNavigate();
+
     const handleClick = () => {
-        if (props.href && !props.disabled) {
-            window.location.href = props.href;
+        if (props.to && !props.disabled) {
+            navigate(props.to); // Use navigate to change the route
         }
     };
     return (
