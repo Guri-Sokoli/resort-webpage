@@ -2,7 +2,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import "../../index.css";
 import { ImageAnimation } from "../../components/ImageAnimation";
 
-const MainContent = () => {
+const HomeMainContent = () => {
     return (
         <div className="flex items-center justify-center relative w-full h-screen overflow-hidden">
             <ImageAnimation />
@@ -10,4 +10,4 @@ const MainContent = () => {
     );
 };
 
-export default MainContent;
+export default HomeMainContent;

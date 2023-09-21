@@ -24,7 +24,7 @@ const Header = () => {
 
     return (
         <header
-            className={`flex flex-row justify-around items-center bg-accent h-32 ${
+            className={`flex flex-row justify-around items-center bg-accent h-32 text-md ${
                 isSticky ? "sticky top-0 z-50" : ""
                 // duhet qitu me ndreq me bo ma smooth, edhe mundsisht mos me downloadu libraria
             }`}

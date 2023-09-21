@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export const HeaderLink = (props) => {
     return (
-        <button className="px-12 group flex transition duration-300">
+        <button className="px-12 group flex transition duration-300 w-max">
             <li className="">
                 <Link to={props.to} className="flex flex-row">
                     {props.children}
