@@ -1,4 +1,5 @@
 import test from "../../img/selectSearchImg.jpg";
+import RightArrowIcon from "../../img/RightArrowIcon.js";
 
 const SelectMainContent = () => {
     const containerStyle = {
@@ -14,17 +15,8 @@ const SelectMainContent = () => {
             style={containerStyle}
         >
             <div className="flex flex-col justify-center items-center w-full h-full relative z-20 text-white">
-                <div className="flex justify-center items-center">
-                    <svg className="w-screen z-20">
-                        <text
-                            x="50%"
-                            y="60%"
-                            textAnchor="middle"
-                            className="svg-text"
-                        >
-                            Search
-                        </text>
-                    </svg>
+                <div className="flex justify-center items-center text-white text-6xl font-bold tracking-widest">
+                    Search
                 </div>
             </div>
         </div>
