@@ -6,7 +6,7 @@ const SelectDropDown = () => {
     const [openOtherDropdown, setOpenOtherDropdown] = useState(false);
 
     return (
-        <div className="flex w-full h-32 bg-gray-700 justify-center items-center">
+        <div className="flex w-full h-32 bg-gray-500 justify-center items-center">
             <ul className="flex justify-around items-center w-full">
                 <div className="flex flex-row">
                     <div

@@ -2,6 +2,7 @@ import Header from "./pages/Home/Header";
 import HomeQuickLinks from "./pages/Home/HomeQuickLinks";
 import SelectMainContent from "./pages/Select/SelectMainContent";
 import SelectDropDown from "./pages/Select/SelectDropDown";
+import SelectStayTime from "./pages/Select/SelectStayTime";
 
 const SelectPage = () => {
     return (
@@ -11,10 +12,10 @@ const SelectPage = () => {
 
             <SelectDropDown />
 
-            <div className="flex flex-row justify-around">
-                {/* <SelectStayTime />
+            <div className="flex flex-row justify-around h-full p-12">
+                <SelectStayTime />
                 {/* qitu kom pun 
-                <SelectCabin /> */}
+                    <SelectCabin /> */}
             </div>
 
             <HomeQuickLinks />
